@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anki app</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="not-select">⬅ Hiragana</h1>
+    </header>
+    <div id="mail-page" class="page hidden">
+      <ul>
+        <li><button>Hiragana</button></li>
+        <li><button>Katakana</button></li>
+        <li><button>Kanji</button></li>
+        <li><button>Words</button></li>
+        <li><button>Sentences</button></li>
+      </ul>
+    </div>
+    <div id="quiz" class="page">
+      <div id="question">Some Long question</div>
+      <div id="answer">Some long answer</div>
+      <div class="buttons"><button id="reveal">Reveal</button></div>
+      <div class="buttons">
+        <button id="fail">Fail</button>
+        <button id="hard">Hard</button>
+        <button id="good">Good</button>
+        <button id="easy">Easy</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
