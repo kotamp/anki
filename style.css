@@ -2,7 +2,8 @@ html {
   font-size: 16px;
   font-family: sans-serif;
   background-color: #fff;
-  padding: 3vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,15 +11,23 @@ body {
   padding: 0;
 }
 
+h1 {
+  background-color: #fce;
+  font-size: 2.4em;
+  overflow-x: hidden;
+  white-space: nowrap;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+
 button {
-  background-color: #fff;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  color: #333;
+  background-color: #fec;
+  border: none;
+  border-radius: 0;
   font-size: 2em;
   margin: 0;
-  padding: 10px 15px;
   outline: none;
+  padding: 10px 15px;
 }
 
 button::-moz-focus-inner {
@@ -26,10 +35,18 @@ button::-moz-focus-inner {
 }
 
 button:active {
-  background-color: #eee;
+  background-color: #feca;
+}
+
+#quiz {
+  padding-bottom: 20vh;
 }
 
 
+.page {
+  margin: 3vh;
+/*  background-color: #fec; */
+}
 
 #question {
   font-size: 4em;
@@ -47,7 +64,7 @@ button:active {
   display: flex;
 
   position: fixed;
-  bottom: 3vh;
+  bottom: 0;
   left: 3vh;
   right: 3vh;
 
@@ -65,33 +82,26 @@ button:active {
 }
 
 .buttons * {
-/*  padding: 0;*/
+  border: 0 none;
+  border-radius: 0;
   flex-grow: 1;
+  outline: none;
 
-/*  color: #000d;*/
-
-  line-height: 70px;
+  line-height: 20vh;
 /*  background-color: #fff;*/
 
 /*  border: 0;*/
 
+/*
   margin-right: -1px;
   border-radius: 0;
+*/
 
-  font-size: 1em;
+  font-size: 1.4em;
 }
 
 
 
-.buttons :first-child {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.buttons :last-child {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
 
 #fail {
   background-color: rgba(253, 151, 151, 0.33);
@@ -142,12 +152,6 @@ button:active {
   }   
 }
 
-h1 {
-  background-color: #fce;
-  font-size: 2.4em;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
 
 ul {
   padding: 0;
@@ -159,6 +163,7 @@ li {
 }
 
 li > button {
+  font-size: 2em;
   background-color: #fec;
   border: none;
   border-radius: 0;

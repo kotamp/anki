@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1 id="title" class="not-select">⬅ Hiragana</h1>
-    </header>
-    <div id="mail-page" class="page hidden">
-      <ul>
+    <div id="main-page" class="page hidden">
+      <header>
+        <h1 id="title" class="not-select">⬅ Hiragana</h1>
+      </header>
+      <ul id="main-list">
         <li><button>Hiragana</button></li>
         <li><button>Katakana</button></li>
         <li><button>Kanji</button></li>
@@ -19,11 +19,11 @@
         <li><button>Sentences</button></li>
       </ul>
     </div>
-    <div id="quiz" class="page">
+    <div id="quiz" class="page"> 
       <div id="question">Some Long question</div>
       <div id="answer">Some long answer</div>
-      <div class="buttons"><button id="reveal">Reveal</button></div>
-      <div class="buttons">
+      <div id="reveal-buttons" class="buttons"><button id="reveal">Reveal</button></div>
+      <div id="answer-buttons" class="buttons">
         <button id="fail">Fail</button>
         <button id="hard">Hard</button>
         <button id="good">Good</button>

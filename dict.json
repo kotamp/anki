@@ -1,0 +1,12 @@
+{
+  count: 3,
+  names: [ "Hiragana", "Katakana", "Words" ],
+  lists: [ {
+      keys: ["fa", "mi", "ru"],
+      values: ["de", "fo", "ma"],
+    }, {
+      keys: ["f", "m", "r"],
+      values: ["de", "fo", "ma"],
+    }
+  ],
+}
